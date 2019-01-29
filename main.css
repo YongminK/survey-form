@@ -1,0 +1,46 @@
+body{
+  background: peachpuff linear-gradient(90deg,
+    rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .4) 50%
+    ) center center / 2em;
+}
+h1{
+  text-align:center;
+}
+#form{
+  display: grid;
+}
+#description{
+  margin: 10px auto;
+  font-size: 20px;
+  font-weight: 400;
+}
+#survey-form{
+  background-color: white;
+  margin: 10px auto;
+  height: auto;
+  padding: 20px 50px;
+  display: grid;
+}
+.labels{
+  display: grid;
+  grid-template-columns: 40% 40%;
+}
+#dropdown{
+  width: 100px;
+}
+.radio{
+  padding-left: 0px;
+}
+ul{
+  list-style:none;
+}
+#comment{
+  display: flex;
+  justify-content: space-between;
+}
+#submit{
+  width: 100px;
+  height: 30px;
+  border-radius: 50px;
+  margin: 10px auto;
+}

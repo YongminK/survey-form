@@ -1,0 +1,57 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <div id="form">
+        <p id="description">Let me know about you</p>
+        <form id="survey-form">
+            <div class="labels">
+                <label id="name-label">Your name:</label>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <label id="email-label">Your email: </label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <label id="number-label">Your age: </label> 
+                <input type="number" name="number" id="number" min="1" max="100" placeholder="Age"> 
+            </div>
+            <select id="dropdown">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select> 
+            <ul>
+                <li class="radio">
+                    <input type="radio" name="whoareyou" value="1">
+                    <label>Student</label>
+                </li>  
+                <li class="radio">
+                    <input type="radio" name="whoareyou" value="2">
+                    <label>Developer</label>
+                </li>  
+            </ul>  
+            <ul>
+                <li class="checkbox">
+                  <input type="checkbox" name="whatyouwant" value="tribute">  
+                  <label>Tribute page</label>
+                </li>  
+                <li class="checkbox">                   
+                  <input type="checkbox" name="whoareyou" value="portfolio">
+                  <label>Portfolio page</label>                  
+                </li>  
+            </ul> 
+          <div id="comment">
+            <div>
+                <label>If you want to say anything else:</label> </div>
+            <div>
+                <textarea></textarea>
+            </div>
+          </div>
+            <input type="submit" name="submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
