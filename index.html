@@ -11,29 +11,46 @@
     <div id="form">
         <p id="description">Let me know about you</p>
         <form id="survey-form">
-            <div class="labels">
-                <label id="name-label">Your name:</label>
-                <input type="text" name="name" id="name" placeholder="Name" required>
-                <label id="email-label">Your email: </label>
-                <input type="email" name="email" id="email" placeholder="Email" required>
-                <label id="number-label">Your age: </label> 
-                <input type="number" name="number" id="number" min="1" max="100" placeholder="Age"> 
-            </div>
-            <select id="dropdown">
-                <option value="female">Female</option>
-                <option value="male">Male</option>
-            </select> 
-            <ul>
-                <li class="radio">
-                    <input type="radio" name="whoareyou" value="1">
-                    <label>Student</label>
-                </li>  
-                <li class="radio">
-                    <input type="radio" name="whoareyou" value="2">
-                    <label>Developer</label>
-                </li>  
-            </ul>  
-            <ul>
+           
+                <label class="labels" id="name-label">Your name:</label>
+                <input class="rightTab" type="text" name="name" id="name" placeholder="Name" required>
+                <label class="labels" id="email-label">Your email: </label>
+                <input class="rightTab" type="email" name="email" id="email" placeholder="Email" required>
+                <label class="labels" id="number-label">Your age: </label> 
+                <input class="rightTab" type="number" name="number" id="number" min="1" max="100" placeholder="Age">             
+                <label class="labels">You are</label>
+                <select class="rightTab" id="dropdown">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                </select> 
+            <div class="rowTab">
+
+                    <label class="labels">What do you think about this page?</label>
+                    <ul class="rightTab">
+                        <li class="radio">
+                            <input type="radio" name="rating" value="5">
+                            <label>5</label>
+                        </li>  
+                        <li class="radio">
+                            <input type="radio" name="rating" value="4">
+                            <label>4</label>
+                        </li> 
+                        <li class="radio">
+                            <input type="radio" name="rating" value="3">
+                            <label>3</label>
+                        </li> 
+                        <li class="radio">
+                            <input type="radio" name="rating" value="2">
+                            <label>2</label>
+                        </li> 
+                        <li class="radio">
+                            <input type="radio" name="rating" value="1">
+                            <label>1</label>
+                        </li> 
+                    </ul> 
+                </div>
+
+            <ul class="rightTab">
                 <li class="checkbox">
                   <input type="checkbox" name="whatyouwant" value="tribute">  
                   <label>Tribute page</label>
