@@ -11,7 +11,7 @@
     <div id="form">
         <p id="description">Let me know about you</p>
         <form id="survey-form">
-           
+            <div class="rowTab">         
                 <label class="labels" id="name-label">Your name:</label>
                 <input class="rightTab" type="text" name="name" id="name" placeholder="Name" required>
                 <label class="labels" id="email-label">Your email: </label>
@@ -23,50 +23,49 @@
                     <option value="female">Female</option>
                     <option value="male">Male</option>
                 </select> 
+            </div>  
             <div class="rowTab">
-
                     <label class="labels">What do you think about this page?</label>
                     <ul class="rightTab">
-                        <li class="radio">
+                        <li>
                             <input type="radio" name="rating" value="5">
                             <label>5</label>
                         </li>  
-                        <li class="radio">
+                        <li>
                             <input type="radio" name="rating" value="4">
                             <label>4</label>
                         </li> 
-                        <li class="radio">
+                        <li>
                             <input type="radio" name="rating" value="3">
                             <label>3</label>
                         </li> 
-                        <li class="radio">
+                        <li>
                             <input type="radio" name="rating" value="2">
                             <label>2</label>
                         </li> 
-                        <li class="radio">
+                        <li>
                             <input type="radio" name="rating" value="1">
                             <label>1</label>
                         </li> 
                     </ul> 
                 </div>
-
-            <ul class="rightTab">
-                <li class="checkbox">
-                  <input type="checkbox" name="whatyouwant" value="tribute">  
-                  <label>Tribute page</label>
-                </li>  
-                <li class="checkbox">                   
-                  <input type="checkbox" name="whoareyou" value="portfolio">
-                  <label>Portfolio page</label>                  
-                </li>  
-            </ul> 
-          <div id="comment">
-            <div>
-                <label>If you want to say anything else:</label> </div>
-            <div>
-                <textarea></textarea>
+            <div class="rowTab">
+                <label class="labels">What you want to do?</label>
+                <ul class="rightTab">
+                    <li class="checkbox">
+                      <input type="checkbox" name="whatyouwant" value="tribute">  
+                      <label>Tribute page</label>
+                    </li>  
+                    <li class="checkbox">                   
+                      <input type="checkbox" name="whoareyou" value="portfolio">
+                      <label>Portfolio page</label>                  
+                    </li>  
+                </ul> 
             </div>
-          </div>
+            <div class="rowTab">
+                <label class="labels">If you want to say anything else:</label> 
+                <textarea class="rightTab comment" ></textarea>               
+            </div>
             <input type="submit" name="submit" id="submit">
         </form>
     </div>
